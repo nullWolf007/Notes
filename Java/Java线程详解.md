@@ -1,7 +1,7 @@
 # Java线程详解
 
 ## 线程的生命周期
-<img src="https://github.com/nullWolf007/Java/blob/master/Image/232002051747387.jpg"/>
+![](https://github.com/nullWolf007/Notes/raw/master/Java/Image/232002051747387.jpg)
 
 ## 线程的五种基本状态
 * **新建状态(New)**：当线程对象创建后，进入新建状态。如：Thread t = new Thread()

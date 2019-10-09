@@ -150,7 +150,7 @@ static final int UNTREEIFY_THRESHOLD = 6;
 static final int MIN_TREEIFY_CAPACITY = 64;
 ```
 
-在HashMap中有一个threshold变量，threshold=数组大小*加载银子。当集合中的结点个数大于threshold时，会进行数组扩容。
+在HashMap中有一个threshold变量，threshold=数组大小*加载因子。当集合中的结点个数大于threshold时，会进行数组扩容。
 
 ### 2.5 put方法
 
@@ -162,7 +162,7 @@ public V put(K key, V value) {
 }
 
 final V putVal(int hash, K key, V value, boolean onlyIfAbsent,boolean evict) {
-	Node<K,V>[] tab;//存放table
+    Node<K,V>[] tab;//存放table
     Node<K,V> p;//临时存放一个结点
     int n, i;//n数组的长度
 	if ((tab = table) == null || (n = tab.length) == 0)

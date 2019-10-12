@@ -2,7 +2,6 @@
   - [ 1. 面向对象和面向过程的区别](#1-面向对象和面向过程的区别)
   - [ 2. Java 语言有哪些特点?](#2-Java-语言有哪些特点)
   - [ 3. 关于 JVM JDK 和 JRE 最详细通俗的解答](#3-关于-JVM-JDK-和-JRE-最详细通俗的解答)
-      - [ [JVM](https://github.com/nullWolf007/Notes/tree/master/Java/jvm)](#[JVM]https//githubcom/nullWolf007/Notes/tree/master/Java/jvm)
       - [ JDK 和 JRE](#JDK-和-JRE)
   - [ 4. Oracle JDK 和 OpenJDK 的对比](#4-Oracle-JDK-和-OpenJDK-的对比)
   - [ 5. Java和C++的区别?](#5-Java和C++的区别)
@@ -55,7 +54,7 @@
   - [ 37. Collections 工具类和 Arrays 工具类常见方法总结](#37-Collections-工具类和-Arrays-工具类常见方法总结)
   - [ 38.深浅复制](#38深浅复制)
   - [ 参考](#参考)
-  <!-- /TOC -->
+    <!-- /TOC -->
 [TOC]
 
 ## 1. 面向对象和面向过程的区别
@@ -82,7 +81,7 @@
 
 ## 3. 关于 JVM JDK 和 JRE 最详细通俗的解答
 
-### [JVM](https://github.com/nullWolf007/Notes/tree/master/Java/jvm)
+[**JVM**](https://github.com/nullWolf007/Notes/tree/master/Java/jvm)
 
 Java虚拟机（JVM）是运行 Java 字节码的虚拟机。JVM有针对不同系统的特定实现（Windows，Linux，macOS），目的是使用相同的字节码，它们都会给出相同的结果。
 

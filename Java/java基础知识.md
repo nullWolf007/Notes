@@ -502,6 +502,10 @@ String s = input.readLine();
 
 ## 35 Java 中 IO 流分为几种?BIO,NIO,AIO 有什么区别?
 
+详情见这篇文章：
+
+[**IO**](https://github.com/nullWolf007/Notes/blob/master/Java/IO.md)
+
 ### java 中 IO 流分为几种?
 
    - 按照流的流向分，可以分为输入流和输出流；
@@ -550,7 +554,9 @@ Java Io流共涉及40多个类，这些类看上去很杂乱，但实际上很�
 
 ## 38.深浅复制
 
-详见这边文章[深浅复制问题](https://github.com/nullWolf007/Notes/blob/master/Java/%E6%B7%B1%E6%B5%85%E5%A4%8D%E5%88%B6%E9%97%AE%E9%A2%98.md)
+详见这篇文章：
+
+[深浅复制问题](https://github.com/nullWolf007/Notes/blob/master/Java/%E6%B7%B1%E6%B5%85%E5%A4%8D%E5%88%B6%E9%97%AE%E9%A2%98.md)
 
 ## 参考
 

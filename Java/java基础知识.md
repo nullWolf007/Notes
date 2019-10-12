@@ -548,6 +548,10 @@ Java Io流共涉及40多个类，这些类看上去很杂乱，但实际上很�
 
 详见笔主的这篇文章: <https://gitee.com/SnailClimb/JavaGuide/blob/master/docs/java/Basis/Arrays,CollectionsCommonMethods.md>
 
+## 38.深浅复制
+
+详见这边文章[深浅复制问题](https://github.com/nullWolf007/Notes/blob/master/Java/%E6%B7%B1%E6%B5%85%E5%A4%8D%E5%88%B6%E9%97%AE%E9%A2%98.md)
+
 ## 参考
 
 - https://stackoverflow.com/questions/1906445/what-is-the-difference-between-jdk-and-jre

@@ -389,7 +389,7 @@ hashCode() 的作用是获取哈希码，也称为散列码；它实际上是返
 
 ## 30. 线程有哪些基本状态?
 
-[**多线程和并行程序设计**](https://github.com/nullWolf007/Notes/blob/master/Java/Java%E7%9F%A5%E8%AF%86%E7%B2%BE%E5%8D%8E/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%92%8C%E5%B9%B6%E8%A1%8C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1.md)
+[**多线程和并行程序设计**](https://github.com/nullWolf007/Notes/blob/master/Java/Java%E7%9F%A5%E8%AF%86%E7%B2%BE%E5%8D%8E/%E7%BA%BF%E7%A8%8B/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%92%8C%E5%B9%B6%E8%A1%8C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1.md)
 
 Java 线程在运行的生命周期中的指定时刻只可能处于下面6种不同状态的其中一个状态（图源《Java 并发编程艺术》4.1.4节）。
 

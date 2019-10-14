@@ -81,7 +81,7 @@
 
 ## 3. 关于 JVM JDK 和 JRE 最详细通俗的解答
 
-[**JVM**](https://github.com/nullWolf007/Notes/tree/master/Java/jvm)
+[**JVM**](https://github.com/nullWolf007/Notes/tree/master/Java/Java%E7%9F%A5%E8%AF%86%E7%B2%BE%E5%8D%8E/jvm)
 
 Java虚拟机（JVM）是运行 Java 字节码的虚拟机。JVM有针对不同系统的特定实现（Windows，Linux，macOS），目的是使用相同的字节码，它们都会给出相同的结果。
 

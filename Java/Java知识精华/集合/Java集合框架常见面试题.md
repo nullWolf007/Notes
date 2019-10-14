@@ -492,3 +492,36 @@ Output：
 ## 如何选用集合?
 
 主要根据集合的特点来选用，比如我们需要根据键值获取到元素值时就选用Map接口下的集合，需要排序时选择TreeMap,不需要排序时就选择HashMap,需要保证线程安全就选用ConcurrentHashMap.当我们只需要存放元素值时，就选择实现Collection接口的集合，需要保证元素唯一时选择实现Set接口的集合比如TreeSet或HashSet，不需要就选择实现List接口的比如ArrayList或LinkedList，然后再根据实现这些接口的集合的特点来选用。
+
+## 迭代器并发修改异常
+
+```java
+// 对List中 如果存在123，添加一个元素bc123
+	public static void main(String[] args) {
+		List<String> list = new ArrayList<>();
+		list.add("123");
+		list.add("456");
+		list.add("789");
+		list.add("012");
+
+		Iterator<String> it = list.iterator();
+		while (it.hasNext()) {
+			String s = it.next();
+			if (s.equals("456")) {
+				list.add("bc123");
+			}
+			System.out.println(s);
+		}
+	}
+```
+
+**结果显示**
+
+```text
+123
+456
+Exception in thread "main" java.util.ConcurrentModificationException
+	at java.util.ArrayList$Itr.checkForComodification(Unknown Source)
+	at java.util.ArrayList$Itr.next(Unknown Source)
+	at demo.Test.main(Test.java:18)
+```

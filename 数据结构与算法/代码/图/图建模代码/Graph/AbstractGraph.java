@@ -1,6 +1,7 @@
 package Graph;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public abstract class AbstractGraph<V> implements Graph<V> {
@@ -25,6 +26,15 @@ public abstract class AbstractGraph<V> implements Graph<V> {
         }
         for (int i = 0; i < edges.length; i++) {
             addEdge(edges[i][0], edges[i][1]);
+        }
+    }
+
+    protected AbstractGraph(List<Edge> edges, int numberOfVertices) {
+        for (int i = 0; i < numberOfVertices; i++) {
+            addVertex((V) new Integer(i));
+        }
+        for (Edge edge : edges) {
+            addEdge(edge.u, edge.v);
         }
     }
 
@@ -159,7 +169,29 @@ public abstract class AbstractGraph<V> implements Graph<V> {
     //得到从index开始的一个宽度优先搜索树
     @Override
     public AbstractGraph<V>.Tree bfs(int index) {
-        return null;
+        List<Integer> searchOrder = new ArrayList<>();
+        int[] parent = new int[vertices.size()];
+
+        //初始化
+        for (int i = 0; i < parent.length; i++) {
+            parent[i] = -1;
+        }
+        LinkedList<Integer> linkedList = new LinkedList<>();
+        boolean[] isVisited = new boolean[vertices.size()];
+        linkedList.offer(index);
+        isVisited[index] = true;
+        while (!linkedList.isEmpty()) {
+            int u = linkedList.poll();
+            searchOrder.add(u);
+            for (Edge e : neighbors.get(u)) {
+                if (!isVisited[e.v]) {
+                    linkedList.offer(e.v);
+                    parent[e.v] = u;
+                    isVisited[e.v] = true;
+                }
+            }
+        }
+        return new Tree(index, parent, searchOrder);
     }
 
 

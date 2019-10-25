@@ -13,4 +13,8 @@ public class UnweightGraph<V> extends AbstractGraph<V> {
     public UnweightGraph(V[] vertices, int[][] edges) {
         super(vertices, edges);
     }
+
+    public UnweightGraph(List<Edge> edges, int numberOfVertices) {
+        super(edges, numberOfVertices);
+    }
 }

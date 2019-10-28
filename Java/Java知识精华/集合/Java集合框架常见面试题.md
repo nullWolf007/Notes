@@ -290,6 +290,10 @@ static int hash(int h) {
 
 详情请查看：<https://coolshell.cn/articles/9606.html>
 
+## Map和Pair的区别
+
+Map是映射关系，Pair是一个二元组的绑定
+
 ## ConcurrentHashMap 和 Hashtable 的区别
 
 ConcurrentHashMap 和 Hashtable 的区别主要体现在实现线程安全的方式上不同。

@@ -1,4 +1,4 @@
-package Graph;
+package GraphModule;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -130,6 +130,17 @@ public abstract class AbstractGraph<V> implements Graph<V> {
             return false;
         } else {
             neighbors.get(u).add(edge);
+            return true;
+        }
+    }
+
+    //添加从u到v的边；如果u或者v是无效的 抛出IllegalArgumentException异常；如果添加成功返回true；如果该边已经存在返回false
+    public boolean addEdge(Edge edge) {
+        List<Edge> edgeList = neighbors.get(edge.u);
+        if (edgeList.contains(edge)) {
+            return false;
+        } else {
+            neighbors.get(edge.u).add(edge);
             return true;
         }
     }

@@ -1,8 +1,8 @@
-package Graph.NineTail;
+package GraphModule.NineTail;
 
-import Graph.AbstractGraph;
-import Graph.Edge;
-import Graph.UnweightGraph;
+import GraphModule.AbstractGraph;
+import GraphModule.Edge;
+import GraphModule.UnweightGraph;
 
 import java.util.ArrayList;
 import java.util.List;

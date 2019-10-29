@@ -1,4 +1,4 @@
-package Graph;
+package GraphModule;
 
 public class Edge {
     int u;//起始顶点

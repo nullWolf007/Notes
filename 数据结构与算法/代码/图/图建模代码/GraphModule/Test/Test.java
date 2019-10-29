@@ -1,4 +1,6 @@
-package Graph;
+package GraphModule.Test;
+
+import GraphModule.*;
 
 import java.util.ArrayList;
 import java.util.List;

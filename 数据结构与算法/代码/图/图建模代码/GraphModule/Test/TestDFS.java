@@ -1,8 +1,10 @@
-package Graph;
+package GraphModule.Test;
 
-import java.util.List;
+import GraphModule.AbstractGraph;
+import GraphModule.Graph;
+import GraphModule.UnweightGraph;
 
-public class TestBFS {
+public class TestDFS {
 
     public static void main(String[] args) {
         String[] vertices = {"Seattle", "San Francisco", "Los Angeles", "Denver", "Kansas City",
@@ -23,10 +25,20 @@ public class TestBFS {
         };
         Graph<String> graph = new UnweightGraph<String>(vertices, edges);
 
-        AbstractGraph<String>.Tree bfs = graph.bfs(graph.getIndex("Chicago"));
-        List<Integer> searchOrder = bfs.getSearchOrder();
-        for (int i = 0; i < searchOrder.size(); i++) {
-            System.out.print(graph.getVertex(searchOrder.get(i)) + "  ");
-        }
+        AbstractGraph<String>.Tree dfs = graph.dfs(graph.getIndex("Chicago"));
+        dfs.printPath(10);
+//        List<Integer> searchOrder = dfs.getSearchOrder();
+////        System.out.println(dfs.getNumberOfVeriticesFound() + " vertices are searched in this DFS order");
+////
+////        for (int i = 0; i < searchOrder.size(); i++) {
+////            System.out.print(graph.getVertex(searchOrder.get(i)) + " ");
+////        }
+////        System.out.println();
+////
+////        for (int i = 0; i < searchOrder.size(); i++) {
+//////            if (dfs.getParent(i) != -1) {
+////            System.out.print(graph.getVertex(searchOrder.get(i)) + "---> ");
+//////            }
+////        }
     }
 }

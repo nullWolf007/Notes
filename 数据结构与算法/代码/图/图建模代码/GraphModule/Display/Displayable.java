@@ -1,4 +1,4 @@
-package Graph;
+package GraphModule.Display;
 
 public interface Displayable {
     public int getX();

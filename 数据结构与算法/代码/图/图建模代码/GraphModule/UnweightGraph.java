@@ -1,4 +1,4 @@
-package Graph;
+package GraphModule;
 
 import java.util.List;
 

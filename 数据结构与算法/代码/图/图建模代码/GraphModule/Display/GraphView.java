@@ -1,13 +1,11 @@
-package Graph;
+package GraphModule.Display;
 
+import GraphModule.Graph;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
-import javafx.scene.shape.LineTo;
 import javafx.scene.text.Text;
 
-import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
 
 public class GraphView extends Pane {

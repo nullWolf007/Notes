@@ -1,4 +1,4 @@
-package Graph.NineTail;
+package GraphModule.NineTail;
 
 import java.util.List;
 

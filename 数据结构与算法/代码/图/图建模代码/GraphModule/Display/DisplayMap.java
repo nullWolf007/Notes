@@ -1,8 +1,10 @@
-package Graph;
+package GraphModule.Display;
 
+import GraphModule.Graph;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import GraphModule.UnweightGraph;
 
 public class DisplayMap extends Application {
     @Override

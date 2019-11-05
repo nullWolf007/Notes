@@ -208,7 +208,7 @@ public abstract class AbstractGraph<V> implements Graph<V> {
 
     public class Tree {
         private int root;//根结点
-        private int[] parent;//结点的父结点
+        private int[] parent;//结点的父结点 如parent[0]=3;则说明0的父结点是2结点
         private List<Integer> searchOrder;//遍历结点的顺序
 
         public Tree(int root, int[] parent, List<Integer> searchOrder) {
@@ -257,7 +257,13 @@ public abstract class AbstractGraph<V> implements Graph<V> {
             }
         }
 
-
+        public void printTree() {
+            for (int i = 0; i < parent.length; i++) {
+                if (parent[i] != -1) {
+                    System.out.print("(" + vertices.get(parent[i]) + "," + vertices.get(i) + ") ");
+                }
+            }
+        }
     }
 
 }

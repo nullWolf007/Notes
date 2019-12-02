@@ -61,7 +61,14 @@ END)
 FROM user_info;
 ```
 
+## 三、IF相关
 
-## 三、JOIN相关
+* 语法规则（IF可以多层嵌套，如IF(id=1,1,IF(id=2,2,3))）
+
+```mysql
+IF(条件语句,true的时候执行的,false的时候执行的)
+```
+
+## 四、JOIN相关
 
 ![JOIN相关](https://github.com/nullWolf007/images/raw/master/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%B8%B8%E7%94%A8%E5%85%B3%E9%94%AE%E5%AD%97/join%E7%9B%B8%E5%85%B3.png)

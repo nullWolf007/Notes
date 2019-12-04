@@ -212,6 +212,9 @@ END IF
 
 ### 2.4 JOIN相关
 
+* from多个表等于笛卡尔积也就是cross join
+* join等价于inner join
+
 ![JOIN相关](https://github.com/nullWolf007/images/raw/master/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%B8%B8%E7%94%A8%E5%85%B3%E9%94%AE%E5%AD%97/join%E7%9B%B8%E5%85%B3.png)
 
 ### 2.5 GROUP BY

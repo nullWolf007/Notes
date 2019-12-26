@@ -36,7 +36,7 @@
 
 ## 3.https原理
 
-![图片](https://github.com/nullWolf007/images/blob/master/android/%E7%BD%91%E7%BB%9C/android_net.png)
+![图片](https://github.com/nullWolf007/images/raw/master/android/%E7%BD%91%E7%BB%9C/android_net.png)
 
 ### 提要
 
